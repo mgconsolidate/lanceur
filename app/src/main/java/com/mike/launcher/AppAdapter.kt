@@ -26,6 +26,11 @@ fun View.pressEffect() {
     }
 }
 
+// Icône en verre avec bordure aux couleurs du thème
+fun styleIcon(icon: ImageView) {
+    icon.background = icon.context.glass(0x33FFFFFF, Themes.t().accent.withAlpha(0x66), 15)
+}
+
 class AppAdapter(
     private val onClick: (AppItem, View) -> Unit,
     private val onLong: (AppItem) -> Unit
@@ -49,6 +54,7 @@ class AppAdapter(
         val app = items[pos]
         h.icon.setImageDrawable(app.icon)
         h.label.text = app.label
+        styleIcon(h.icon)
         h.itemView.pressEffect()
         h.itemView.setOnClickListener { onClick(app, h.icon) }
         h.itemView.setOnLongClickListener { onLong(app); true }
