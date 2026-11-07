@@ -1,0 +1,6 @@
+MG Launcher - projet complet (prêt pour GitHub)
+1. Crée un dépôt vide sur github.com (New repository), sans README.
+2. Envoie tout le contenu de ce dossier dedans (git ou GitHub Desktop).
+3. Onglet Actions > "Build APK" : GitHub compile l'app (3-5 min).
+4. Ouvre l'exécution terminée > Artifacts > MGLauncher-apk > télécharge, décompresse, installe l'APK sur ton téléphone.
+5. Appuie sur Accueil : choisis MG Launcher.
